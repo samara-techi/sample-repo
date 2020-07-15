@@ -11,6 +11,7 @@ public class CustomerController {
 	@GetMapping("/test")
 	public String test() {
 		System.out.println("Developer code");
+
 		return "success";
 	}
 
