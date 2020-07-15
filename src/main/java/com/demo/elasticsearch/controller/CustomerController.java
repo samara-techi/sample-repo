@@ -16,7 +16,6 @@ public class CustomerController {
 		System.out.println("Hai this is Anirudh Joseph");
 		System.out.println("Hai this is Almond Peter - team lead");
 
-
 		return "success";
 	}
 
