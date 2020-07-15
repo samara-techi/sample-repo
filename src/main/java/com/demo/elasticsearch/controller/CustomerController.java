@@ -10,6 +10,7 @@ public class CustomerController {
 	
 	@GetMapping("/test")
 	public String test() {
+		System.out.println("Team lead code");
 		return "success";
 	}
 
