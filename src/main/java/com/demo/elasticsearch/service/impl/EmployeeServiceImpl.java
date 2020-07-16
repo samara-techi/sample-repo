@@ -10,9 +10,9 @@ import com.demo.elasticsearch.service.EmployeeService;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-
+   
 	private static final List<Employee> employees = new ArrayList<>();
-	
+	//This block is executed on creation of bean instance -- on start up
 	static {
 		employees.add(new Employee("2", "Samara", "Software Engineer", 10000));
 		employees.add(new Employee("3", "Kavi raja", "Software Engineer", 15000));
@@ -24,7 +24,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 	
 	@Override
 	public String createEmployee(Employee employee) {
-		// TODO Auto-generated method stub
 		if(employee.getId() == null) {
 			//save the employee
 			//generate the id of an employee
